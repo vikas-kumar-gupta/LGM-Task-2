@@ -1,0 +1,63 @@
+a {
+  text-decoration: none;
+  color: rgb(53, 53, 53);
+}
+
+.user {
+  background: rgb(255, 255, 255);
+  box-shadow: 0 0 7px 0px rgba(0, 0, 0, 0.3);
+  padding: 2rem 0.5rem 0;
+  border-radius: 12px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 30%px;
+}
+
+.user:hover {
+  box-shadow: 0 0 7px 5px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s ease;
+  transform: scale(1.02);
+}
+
+.imgBoX {
+  border-radius: 50%;
+  width: 130px;
+  height: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.avatar {
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.imgBoX::before {
+  content: " ";
+  height: 130px;
+  width: 130px;
+  background: #0f4a74;
+  position: absolute;
+  border-radius: 50%;
+  /* top: 0.12px;
+  right: 4.5%;
+  z-index: 1; */
+}
+
+.user h2 {
+  color: #0f4a74;
+}
+
+/* .user .id {
+  opacity: 0.5;
+  text-decoration: none;
+} */
+
+.user p {
+  text-decoration: none;
+}
